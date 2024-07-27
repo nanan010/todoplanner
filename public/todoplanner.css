@@ -1,0 +1,199 @@
+body{
+    background-color: rgb(41, 36, 36);
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-size: large;
+}
+form{
+    margin: 80px 130px 130px 130px;
+    padding: 20px;
+    border: solid 0.1px;
+    background-color: rgb(35, 32, 47);
+    box-shadow: 4px 0px 4px 0px;
+    border-radius: 15px;
+    color: white;
+}
+#title, #etitle{
+    margin: 8px;
+    padding: 10px;
+    font-size: medium;
+    width: 75%;
+    border-radius: 10px;
+}
+#add, #save{
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    font-size: large;
+    border-radius: 10px;
+    background-color: rgb(34, 111, 47);
+}
+.add{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    padding: 30px;
+    z-index: 100;
+    display: block;
+    background-color: rgb(41, 36, 36);
+    font-size: 20px; 
+    color: white; 
+    margin: 120px;
+}
+#datepicker, #edatepicker{
+    margin: 8px;
+    padding: 10px;
+    width: 75%;
+    border-radius: 10px;
+    font-size: medium;
+}
+#mode{
+    padding: 10px;
+    margin-right: 80px;
+}
+input[type="checkbox"]{
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+.dateheader{
+    padding: 8px;
+    margin:  10px 120px 8px 120px;
+}
+.dateheadertext{
+    margin:  8px;
+}
+.tasklist{
+    padding:8px;
+    margin: 8px 120px 8px 120px;
+    color: rgb(222, 184, 135);
+    border-radius: 5px;
+    background-color: rgb(33, 32, 47);
+    border: solid 1px rgb(113, 103, 117);
+}
+
+.tasklistlight{
+    color: rgb(77, 61, 45);
+    background-color: rgb(215, 215, 250);
+    border: solid 1px rgb(50, 45, 52);
+}
+
+.iconlayout{
+    color:burlywood;
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+    margin: 8px;
+}
+
+.icon{
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.listtitle{
+    font-size: large;
+    padding: 8px;
+    margin: 8px;
+    float: left;
+}
+.checkboxlabel{
+    margin: 8px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+}
+.latetitle{
+    font-size: 20px;
+    margin: 8px;
+    color: red;
+    /* color: rgb(239, 4, 4); */
+}
+.listdate{
+    padding: 8px;
+    margin: 8px;
+    font-size: 20px;        
+    text-align: right;
+}
+
+.popup{
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgb(128, 128, 128, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 101;
+}
+
+.popupwindow{
+    width: 60vw;
+    height: 61vh;
+    border: solid white 1px;
+    border-radius: 5px;        
+    padding: 25px;
+    display: block;
+    background-color: rgb(41, 37, 56);
+}
+.lightmode{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.popuplight{
+    background-color: rgb(215, 215, 250);
+    border: solid 1px rgb(50, 45, 52);
+    color: black;
+}
+.mode{
+    padding: 10px;
+    margin: 0 20px 0 0;
+    float: right;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+@media screen and (max-width:1000px){
+    form{
+        margin: 20px;
+        padding: 15px;
+    }
+    .popup{
+        width: 100vw;
+        height: 100vh;
+    }
+    .popupwindow{
+        width: 80vw;
+        height: 70vh;
+    }
+    .tasklist{
+        padding:8px;
+        margin: 8px 30px 8px 30px;
+    }
+    .dateheader{
+        padding: 8px;
+        margin:  10px 20px 8px 20px;
+    }
+    .add{
+        margin: 20px;
+        display: block;
+    }
+    .mode{
+        padding: 10px;
+        margin: 20px 10px 0 0;
+        z-index: 104;
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 10;
+        padding: 10px;
+    }
+    
+}
+.loader{
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}

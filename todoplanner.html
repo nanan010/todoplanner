@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="viewport" content="width=device-width">
+    <meta name="charset" charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="To Do Planner">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="todoplanner.css">
+    <noscript>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </noscript>    
+    <head>
+        <title>Plan your day</title>
+    </head>
+    <body>
+        <div id="loadingdiv" class="loader">
+            <i class="fa-solid fa-spinner fa-spin-pulse" id="loading"></i>
+        </div>
+        <div id="body">
+            <div class="popup" id="popup">
+                <div class="popupwindow" id="popupwindow">
+                    <i class="fa-solid fa-close" id="close" style="font-size: 30px; float: right; color: white;" onclick="closepopup()"></i>
+                    <p id="popuptitle" style="padding: 8px; margin: 30px;">Add Task</p>
+                    <form action="/submit" method="post" id="addForm">
+                        <label for="title">Title</label><br>
+                        <input id="title" name="title" type="text" required/>
+                        <br>
+                        <label for="datepicker">Date</label><br>
+                        <input id="datepicker" type="datetime-local" name="date" required/>
+                        <br>
+                        <input type="submit" id="add" value="ADD"/>
+                    </form>
+                    <form id="editForm">
+                        <label for="etitle">Title</label><br>
+                        <input id="etitle" name="title" type="text" required/>
+                        <br>
+                        <label for="edatepicker">Date</label><br>
+                        <input id="edatepicker" type="datetime-local" name="date" required/>
+                        <br>
+                        <input type="checkbox" id="check">
+                        <label for="check">Mark as Complete</label><br>
+                        <input type="button" id="save" value="Save"/>
+                    </form>
+                </div>
+            </div>
+            <section name="body">
+                <i class="fa fa-sun mode" id="mode" aria-hidden="true" onclick="togglebutton()"></i>
+                <i class="fa fa-plus add" id="addview" onclick="openPopup()"> Add Task</i>
+                <div class="parent" id="parent">
+            </div>
+        </section>
+        </div>
+    </body>
+    <script src="todoplanner.js">
+    </script>
+</html>
