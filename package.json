@@ -1,7 +1,17 @@
 {
-  "dependencies": {
-    "ejs": "^3.1.10",
-    "express": "^4.19.2",
-    "mongodb": "^6.7.0"
+  {
+    "name": "To-do-planner",
+    "version": "1.0.0",
+    "main": "todo_api.js",
+    "script":{
+      "start": "node todo_api.js"
+    }
+  },
+  {
+    "dependencies": {
+      "ejs": "^3.1.10",
+      "express": "^4.19.2",
+      "mongodb": "^6.7.0"
+    }
   }
 }
