@@ -48,8 +48,9 @@ async function fetchTasks(){
         overduecount.style.margin = '0px';
         datehead.append(overduecount);
     });
-    modefromstorage();
+    console.log("checking");
     loadingpage(0);
+    modefromstorage();
 }
 
 function openOrCloseView(parent, view){
