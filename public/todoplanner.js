@@ -1,7 +1,6 @@
 async function fetchTasks(){
     var res = await fetch("/tasks");
     var data = await res.json();
-    console.log("todo",data);
     const [newdata, oldindex] = sortthedata(data);
     (newdata).forEach((data, index)=>{
         if(index==oldindex){
@@ -49,9 +48,8 @@ async function fetchTasks(){
         overduecount.style.margin = '0px';
         datehead.append(overduecount);
     });
-    console.log("checking");
-    loadingpage(0);
     modefromstorage();
+    loadingpage(0);
 }
 
 function openOrCloseView(parent, view){
