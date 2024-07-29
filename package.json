@@ -2,7 +2,7 @@
     "name": "To-do-planner",
     "version": "1.0.0",
     "main": "todo_api.js",
-    "script":{
+    "scripts":{
       "start": "node todo_api.js"
     },
     "dependencies": {
