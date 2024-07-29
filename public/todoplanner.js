@@ -1,6 +1,7 @@
 async function fetchTasks(){
     var res = await fetch("/tasks");
     var data = await res.json();
+    console.log("todo",data);
     const [newdata, oldindex] = sortthedata(data);
     (newdata).forEach((data, index)=>{
         if(index==oldindex){
